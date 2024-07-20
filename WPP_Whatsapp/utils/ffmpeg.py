@@ -12,12 +12,9 @@ def get_ffmpeg_path():
         return ffmpeg_path
 
     search_paths = [
-        r'C:\ffmpeg\bin',
-        'C:\\FFmpeg\\bin',
-        'C:\\FFmpeg\\FFmpeg\\bin',
-        'C:\\Program Files\\ffmpeg\\bin',
-        'C:\\Program Files (x86)\\ffmpeg\\bin',
-    ]
+        r'ffmpeg\bin',
+        'FFmpeg\\bin',
+        'FFmpeg\\FFmpeg\\bin']
 
     for path in search_paths:
         ffmpeg_candidate = os.path.join(path, 'ffmpeg')
